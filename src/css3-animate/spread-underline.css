@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+.spread-underline {
+    background: #ccc;
+}
+.spread-underline  .profile-link {
+    position: absolute;
+    padding-left: 70px;
+    background: url(./profile@2x.png) 10px center no-repeat;
+    background-size: 50px 50px;
+    z-index: 100;
+    line-height: 60px;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin:auto;
+    height: 60px;
+}
+
+.spread-underline a:hover {
+    color: inherit;
+}
+
+.spread-underline .underline {
+    display: block;
+    position: relative;
+    padding: 0;
+    width: 90%;
+    height: 2px;
+    bottom: 25%;
+    right: 0;
+    background-color: #fff;
+    -webkit-transition: all 0.25s ease-in-out 0s;
+    transition: all 0.25s ease-in-out 0s;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+}
+
+.spread-underline a:hover .underline {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
